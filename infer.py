@@ -35,16 +35,16 @@ def preprocessor(path):
     for i  in path: # /workspace/P/normalized_data/geopotential_6hour/era5_z225_1973070712.npy
         i = i.replace('\t', ' ')
         print(i)
-        geo_225 = np.load('/workspace/P/normalized_data/geopotential_6hour/era5_z225_'+i.split(' ')[5][:-1] + '.npy')
-        geo_500 = np.load('/workspace/P/normalized_data/geopotential_6hour/era5_z500_'+i.split(' ')[5][:-1] + '.npy')
-        geo_700 = np.load('/workspace/P/normalized_data/geopotential_6hour/era5_z700_'+i.split(' ')[5][:-1] + '.npy')
-        uwind_225 = np.load('/workspace/P/normalized_data/uwind_6hour/era5_u225_'+i.split(' ')[5][:-1] + '.npy')
-        uwind_500 = np.load('/workspace/P/normalized_data/uwind_6hour/era5_u500_'+i.split(' ')[5][:-1] + '.npy')
-        uwind_700 = np.load('/workspace/P/normalized_data/uwind_6hour/era5_u700_'+i.split(' ')[5][:-1] + '.npy')
-        vwind_225 = np.load('/workspace/P/normalized_data/vwind_6hour/era5_v225_'+i.split(' ')[5][:-1] + '.npy')
-        vwind_500 = np.load('/workspace/P/normalized_data/vwind_6hour/era5_v500_'+i.split(' ')[5][:-1] + '.npy')
-        vwind_700 = np.load('/workspace/P/normalized_data/vwind_6hour/era5_v700_'+i.split(' ')[5][:-1] + '.npy')
-        img = np.stack([geo_225, geo_500, geo_700, uwind_225, uwind_500, uwind_700, vwind_225,vwind_500, vwind_700], axis=0) #
+        geo_250 = np.load('./z250/z250_'+i.split(' ')[5][:-1] + '.npy')
+        geo_500 = np.load('./z500/_z500_'+i.split(' ')[5][:-1] + '.npy')
+        geo_700 = np.load('./z700/_z700_'+i.split(' ')[5][:-1] + '.npy')
+        uwind_250 = np.load('./u250/_u250_'+i.split(' ')[5][:-1] + '.npy')
+        uwind_500 = np.load('./u500/_u500_'+i.split(' ')[5][:-1] + '.npy')
+        uwind_700 = np.load('./u700/_u700_'+i.split(' ')[5][:-1] + '.npy')
+        vwind_250 = np.load('./v250/_v250_'+i.split(' ')[5][:-1] + '.npy')
+        vwind_500 = np.load('./v500/_v500_'+i.split(' ')[5][:-1] + '.npy')
+        vwind_700 = np.load('./v700/_v700_'+i.split(' ')[5][:-1] + '.npy')
+        img = np.stack([geo_250, geo_500, geo_700, uwind_250, uwind_500, uwind_700, vwind_250,vwind_500, vwind_700], axis=0) #
         imgs.append(img)
         coord = np.stack([float(i.split(' ')[2]), float(i.split(' ')[3])], axis=0)
         coords.append(coord)
@@ -133,10 +133,10 @@ heads = 4
 model = TrajectoryTransformer(input_seq_len, output_seq_len, video_dim, tensor_dim, embed_size, num_layers, heads).to(device)
 model = torch.nn.DataParallel(model)
 cudnn.benchmark = True
-checkpoint = torch.load('/workspace/P/LT-TPC/LT-TPC5/LT-TPC_ERA5/results/Debug/checkpoints/1900.pth')
+checkpoint = torch.load('./1900.pth')
 model.load_state_dict(checkpoint)
 
-data = glob.glob('/workspace/P/LT-TPC/LT-TPC5/LT-TPC_ERA5/2019/*')
+data = glob.glob('./2019/*')
 
 for i in data:
     with open(i, 'r') as f:
