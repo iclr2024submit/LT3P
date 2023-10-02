@@ -12,6 +12,22 @@
 Note that because the capacity of UM data is very large, the size that can be uploaded anonymously is limited.  We only disclose test data.
 Full data link will be released later.
 
+Folder Structure
+```
+./README.md
+./infer.py
+./lt_tpc.py
+./metrics.py
+./model.py
+./modules.py
+./utils.py
+./UM_2019/
+---------/.npy
+./2019/
+---------/.txt
+./1900.pth
+
+```
 
 ```bash
 python3 infer.py
