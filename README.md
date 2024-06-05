@@ -9,7 +9,7 @@
 **pre-trained weight** [https://drive.google.com/file/d/1ShXQ1lA6zKoyDvugY79NbczIWhz5Mjig/view?usp=drive_link]
 
 # Poster
-[ICLR_Poster.pdf](https://github.com/user-attachments/files/15574564/ICLR_Poster.pdf)
+![ICLR_Poster](https://github.com/iclr2024submit/LT3P/assets/146421749/7a1d8487-25f0-4ea3-9390-ffbf0b065bfa)
 
 
 Note that because the capacity of UM data is very large, the size that can be uploaded anonymously is limited.  We only disclose test data.
