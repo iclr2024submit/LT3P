@@ -50,5 +50,15 @@ The red dot is prediction, the green dot is input, and the blue dot is GT.
 
 Note that we provide a deterministic model due to inference code compatibility.
 
-Our full training and inference code will be released after review.
+
 ***
+
+# Citation
+```bibtex
+@inproceedings{park2023long,
+  title={Long-Term Typhoon Trajectory Prediction: A Physics-Conditioned Approach Without Reanalysis Data},
+  author={Park, Young-Jae and Seo, Minseok and Kim, Doyi and Kim, Hyeri and Choi, Sanghoon and Choi, Beomkyu and Ryu, Jeongwon and Son, Sohee and Jeon, Hae-Gon and Choi, Yeji},
+  booktitle={The Twelfth International Conference on Learning Representations},
+  year={2023}
+}
+```
