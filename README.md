@@ -1,15 +1,15 @@
-# Paper
+# Long-Term Typhoon Trajectory Prediction: A Physics-Conditioned Approach Without Reanalysis Data
 
-**Long-Term Typhoon Trajectory Prediction: A Physics-Conditioned Approach Without Reanalysis Data**: [https://openreview.net/forum?id=ziDFH8TPPK]
+**This is the official project repository for Long-Term Typhoon Trajectory Prediction: A Physics-Conditioned Approach Without Reanalysis Data (ICLR 2024 Spotlight)**
 
-# Abstract
+## Abstract
 In the face of escalating climate changes, typhoon intensities and their ensuing damage have surged. Accurate trajectory prediction is crucial for effective damage control. Traditional physics-based models, while comprehensive, are computationally intensive and rely heavily on the expertise of forecasters. Contemporary data-driven methods often rely on reanalysis data, which can be considered to be the closest to the true representation of weather conditions. However, reanalysis data is not produced in real-time and requires time for adjustment because prediction models are calibrated with observational data. This reanalysis data, such as ERA5, falls short in challenging real-world situations. Optimal preparedness necessitates predictions at least 72 hours in advance, beyond the capabilities of standard physics models. In response to these constraints, we present an approach that harnesses real-time Unified Model (UM) data, sidestepping the limitations of reanalysis data. Our model provides predictions at 6-hour intervals for up to 72 hours in advance and outperforms both state-of-the-art data-driven methods and numerical weather prediction models. In line with our efforts to mitigate adversities inflicted by typhoons, we release our preprocessed PHYSICS TRACK dataset, which includes ERA5 reanalysis data, typhoon best-track, and UM forecast data.
 
 
-# Poster
+## Poster
 ![ICLR_Poster](https://github.com/iclr2024submit/LT3P/assets/146421749/52d9e6d8-5dc6-41cf-a17b-53f1c6395785)
 
-# LT3P Inference code
+## LT3P Inference code
 
 **UM data link**: [https://drive.google.com/drive/folders/1_hos41VlpbFIlhjCcuniN8OTCKe4ctBu?usp=drive_link]
 
@@ -56,7 +56,7 @@ Note that we provide a deterministic model due to inference code compatibility.
 
 ***
 
-# Citation
+## Citation
 ```bibtex
 @inproceedings{park2023long,
   title={Long-Term Typhoon Trajectory Prediction: A Physics-Conditioned Approach Without Reanalysis Data},
