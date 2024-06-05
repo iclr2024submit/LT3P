@@ -18,7 +18,6 @@ In the face of escalating climate changes, typhoon intensities and their ensuing
 
 
 Note that because the capacity of UM data is very large, the size that can be uploaded anonymously is limited.  We only disclose test data.
-Full data link will be released later.
 
 Folder Structure
 ```
