@@ -13,7 +13,7 @@ In the face of escalating climate changes, typhoon intensities and their ensuing
 
 **Additional Visualization Results** [https://drive.google.com/drive/folders/1-ZTpPgQ0YRdxL0xzdTvC0fYz6hKLKLdf?usp=drive_link]
 
-**pre-trained weight** [https://drive.google.com/file/d/1ShXQ1lA6zKoyDvugY79NbczIWhz5Mjig/view?usp=drive_link]
+**pre-trained weight** [https://drive.google.com/drive/folders/1KGuyhXbKbFZCsJQ1x6EhyrQQWhIqIt27?usp=drive_link]
 
 
 
