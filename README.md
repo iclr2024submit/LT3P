@@ -1,5 +1,5 @@
 # Poster
-![ICLR_Poster](https://github.com/iclr2024submit/LT3P/assets/146421749/7a1d8487-25f0-4ea3-9390-ffbf0b065bfa)
+![ICLR_Poster](https://github.com/iclr2024submit/LT3P/assets/146421749/52d9e6d8-5dc6-41cf-a17b-53f1c6395785)
 
 # LT3P Inference code
 
