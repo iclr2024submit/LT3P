@@ -20,8 +20,8 @@ In the face of escalating climate changes, typhoon intensities and their ensuing
 **pre-trained weight** [https://drive.google.com/drive/folders/1KGuyhXbKbFZCsJQ1x6EhyrQQWhIqIt27?usp=drive_link]
 
 
+If you contact us at iclr2024submit@gmail.com, we will gladly share the preprocessed ERA5, UM data and, running code.
 
-Note that because the capacity of UM data is very large, the size that can be uploaded anonymously is limited.  We only disclose test data.
 
 Folder Structure
 ```
